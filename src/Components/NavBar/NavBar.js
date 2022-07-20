@@ -8,7 +8,7 @@ import "./NavBar.css"
 const NavBar = () => {
     return(
             <Box sx={{ flexGrow: 1 }}>
-            <AppBar position="static" >
+            <AppBar position="static">
                 <Toolbar className="general_container">
                 <img src='/LOGO.jpg'></img>
                 <Button color="inherit">HOME</Button>
