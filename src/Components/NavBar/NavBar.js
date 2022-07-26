@@ -7,6 +7,15 @@ import "./NavBar.css"
 import CartWidget from '../CartWidget/CartWidget';
 
 const NavBar = () => {
+
+    const style = {
+        borderRadius: '100%',
+        border: '2px blueviolet solid',
+        position: 'absolute',
+        padding: '50px 50px',
+        marginLeft: '90%'
+      };
+
     return(
             <Box sx={{ flexGrow: 1 }}>
             <AppBar position="static">
@@ -17,7 +26,7 @@ const NavBar = () => {
                 <Button color="inherit">NOSOTRXS</Button>
                 <Button color="inherit">SANTUARIO SALVAJES</Button>
 
-                <CartWidget></CartWidget>
+                <Button style={style}> <CartWidget/> </Button>
                 </Toolbar>
             </AppBar>
             </Box>
