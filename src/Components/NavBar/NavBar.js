@@ -4,6 +4,7 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Button from '@mui/material/Button';
 import "./NavBar.css"
+import CartWidget from '../CartWidget/CartWidget';
 
 const NavBar = () => {
     return(
@@ -15,6 +16,8 @@ const NavBar = () => {
                 <Button color="inherit">PRODUCTOS</Button>
                 <Button color="inherit">NOSOTRXS</Button>
                 <Button color="inherit">SANTUARIO SALVAJES</Button>
+
+                <CartWidget></CartWidget>
                 </Toolbar>
             </AppBar>
             </Box>
