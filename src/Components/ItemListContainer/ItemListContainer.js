@@ -1,4 +1,4 @@
-import { textAlign } from "@mui/system";
+import ItemCount from "../itemCount/itemCount";
 
 const ItemListContainer = (propiedad) => {
 
@@ -13,7 +13,10 @@ const ItemListContainer = (propiedad) => {
     return(
         
         <div style={style}>
-            <h3> {propiedad.prop} </h3>
+            <div>
+                <h3> {propiedad.prop} </h3>
+            </div>
+            <ItemCount/>
         </div>
         
     )

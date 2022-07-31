@@ -16,15 +16,19 @@ const NavBar = () => {
         marginLeft: '90%'
       };
 
+      const buttonStyle = {
+        margin: '20px'
+      }
+
     return(
             <Box sx={{ flexGrow: 1 }}>
             <AppBar position="static">
                 <Toolbar className="general_container">
                 <img src='/LOGO.jpg'></img>
-                <Button color="inherit">HOME</Button>
-                <Button color="inherit">PRODUCTOS</Button>
-                <Button color="inherit">NOSOTRXS</Button>
-                <Button color="inherit">SANTUARIO SALVAJES</Button>
+                <Button style={buttonStyle} color="inherit">HOME</Button>
+                <Button style={buttonStyle} color="inherit">PRODUCTOS</Button>
+                <Button style={buttonStyle} color="inherit">NOSOTRXS</Button>
+                <Button style={buttonStyle} color="inherit">SANTUARIO SALVAJES</Button>
 
                 <Button style={style}> <CartWidget/> </Button>
                 </Toolbar>

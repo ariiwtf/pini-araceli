@@ -6,3 +6,11 @@ img {
     justify-content: center;
     background-color: black;    
 }
+
+Button {
+        margin: 150px;
+}
+
+span{
+    color: black;
+}
