@@ -1,4 +1,4 @@
-import ItemCount from "../itemCount/itemCount";
+import ItemList from "../itemList/itemList";
 
 const ItemListContainer = (propiedad) => {
 
@@ -7,6 +7,7 @@ const ItemListContainer = (propiedad) => {
         color: "white",
         margin: '0.5em',
         paddingLeft: 0,
+        display: 'flex',
         height: "100px"
       };
 
@@ -14,9 +15,9 @@ const ItemListContainer = (propiedad) => {
         
         <div style={style}>
             <div>
-                <h3> {propiedad.prop} </h3>
+                <h3 > {propiedad.prop} </h3>
             </div>
-            <ItemCount/>
+            <ItemList/>
         </div>
         
     )

@@ -30,14 +30,13 @@ const ItemCount = () => {
     return(
         
         <div  style={style}>
-            <h3>Producto</h3>
             <span>Cantidad: {stock}</span>
             <br></br>
-            <Button onClick={ () => {onRemove()}} disabled={quantity == 0}>-</Button>
+            <Button onClick={ () => {onRemove()}} disabled={quantity == 0} style={{color:'blueviolet'}}>-</Button>
             <span>{quantity}</span>
-            <Button onClick={ () => {onAdd()}} disabled={stock == 0}>+</Button>
+            <Button onClick={ () => {onAdd()}} disabled={stock == 0} style={{color:'blueviolet'}}>+</Button>
             <br></br>
-            <Button>Añadir al carrito</Button>
+            <Button style={{backgroundColor:'blueviolet' , color:'white' , width:'300px'}}>Añadir al carrito</Button>
         </div>
     )
 }
